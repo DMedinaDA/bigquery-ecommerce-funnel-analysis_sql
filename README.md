@@ -40,6 +40,45 @@ All analyses use the last 30 days of data.
 3. Run the SQL files in the `sql/` folder in numeric order.
 4. Optionally, export results to a BI tool (e.g. Looker Studio) to visualize the funnel.
 
+## Key Insights
+
+### Funnel Performance
+| Stage | Users | Conversion Rate |
+|-------|-------|-----------------|
+| Page Views | **2,173** | - |
+| Add to Cart | 688 | **32.0%** ↓ |
+| Checkout Start | 474 | **69.0%** ↓ |
+| Payment Info | 378 | **80.0%** ↓ |
+| Purchase | **353** | **93.0%** ↓ |
+
+**Overall conversion**: **16.0%** (2,173 views → 353 purchases)
+
+### Traffic Source Performance
+| Source | Views | Purchases | View→Purchase |
+|--------|-------|-----------|---------------|
+| **email** | 233 | **75** | **32.2%** 🥇 |
+| **paid_ads** | 401 | 83 | **21.0%** 🥈 |
+| organic | 884 | 153 | **17.0%** |
+| social | 655 | 42 | **6.0%** 🥉 |
+
+**Email = 5x better than social.**
+
+### Journey Timing
+**Average time for 353 converted users:**
+- View → Cart: **10.99 minutes**
+- Cart → Purchase: **13.04 minutes** 
+- **Total journey**: **24.03 minutes**
+
+### Revenue Metrics
+| Metric | Value |
+|--------|-------|
+| Total Revenue | **$38,181**
+| Orders | 353 |
+| **Avg Order Value** | **$108.16**
+| Revenue per Visitor | **$17.57**
+
+**Takeaway**: Email drives highest ROI; 68% drop-off occurs at cart→checkout stage.
+
 ## Skills Demonstrated
 
 - Writing analytical SQL with CTEs and conditional aggregation.
