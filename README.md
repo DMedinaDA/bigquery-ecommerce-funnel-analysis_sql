@@ -39,8 +39,13 @@ All analyses use the last 30 days of data.
 2. Update the table name in the scripts if needed.
 3. Run the SQL files in the `sql/` folder in numeric order.
 4. Optionally, export results to a BI tool (e.g. Looker Studio) to visualize the funnel.
+   
+## Key Findings
+- Checkout: 80% conversion (don't touch it)
+- Social ads: 30% traffic, poor conversion → shift to retargeting
+- Email: 13% conversion → prioritize capture popups
+- AOV $108 → keep CAC under $30-40
 
-## Key Insights
 
 ### Funnel Performance
 | Stage | Users | Conversion Rate |
