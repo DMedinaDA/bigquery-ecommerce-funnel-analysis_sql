@@ -4,7 +4,7 @@
 SELECT *  FROM `sql-projects-medina.sql_practice.userevents` 
 
 
-   -- 1) Define the sales funnel and count unique users at each stage
+   -- 1) Define the sales funnel and count unique users at each stage, CTE setup to show what will be used. 
 
 WITH funnel_stages AS ( 
 
@@ -21,7 +21,7 @@ WHERE event_date >= TIMESTAMP(DATE_SUB(CURRENT_DATE(),INTERVAL 30 DAY))
 
 )
 
-SELECT * FROM funnel_stages
+SELECT * FROM funnel_stages;
 
   -- 2) Compute step-by-step and overall conversion rates -- conversion rates through the funnel 
 
@@ -139,7 +139,7 @@ SELECT
  total_revenue / total_buyers AS revenue_per_buyer,   -- Average revenue per unique buyer
  total_revenue / total_visitors AS revenue_per_visitor  -- Average revenue generated per unique visitor
 
-FROM funnel_revenue
+FROM funnel_revenue 
 
 
 
